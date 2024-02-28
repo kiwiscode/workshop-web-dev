@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center; color: rgba(0, 0, 0, 0.6)">
+      TODO APP JavaScript
+    </h1>
+    <div class="user-validation-container">
+      <input id="username" type="text" placeholder="Username" />
+      <input id="password" type="password" placeholder="Password" />
+      <button id="log-in-btn">Log in</button>
+    </div>
+
+    <div class="user-card hide">
+      <img class="user-card-image" src="" alt="" />
+      <div class="welcome-user-name"></div>
+      <div class="add-new-task-message"></div>
+    </div>
+
+    <div class="main-content hide">
+      <div class="col-1 hide">
+        <div>
+          In this ToDo application, we've added a special feature to help you
+          organize and categorize your daily tasks.
+        </div>
+        <div class="input-container">
+          <div>
+            <input
+              style="width: 16px; height: 16px"
+              type="checkbox"
+              id="work"
+              name="work"
+            />
+            <label for="work">Work</label>
+          </div>
+          <div>
+            <input
+              style="width: 16px; height: 16px"
+              type="checkbox"
+              id="personal"
+              name="personal"
+            />
+            <label for="personal">Personal</label>
+          </div>
+          <div>
+            <input
+              style="width: 16px; height: 16px"
+              type="checkbox"
+              id="family"
+              name="family"
+            />
+            <label for="family">Family</label>
+          </div>
+          <div>
+            <input
+              style="width: 16px; height: 16px"
+              type="checkbox"
+              id="pet"
+              name="pet"
+            />
+            <label for="pet">Pet</label>
+          </div>
+        </div>
+        <input
+          type="text"
+          name="new-task"
+          id="new-task"
+          placeholder="New task"
+        />
+        <button class="add-new-task">Add New Task</button>
+      </div>
+      <div class="col-2 hide"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
